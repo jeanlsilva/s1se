@@ -768,14 +768,12 @@ textarea {
 	}
 	.menu ul {
 		flex-direction:column;
-		padding-left:0px;
-		width:200px;
+		padding-left:0px;		
 		float:right;
 		margin-bottom:0;
 	}
 	.menu li {
-		background-color:#FFFFFF;
-		border:1px solid #bababa;
+		background-color:#FFFFFF;		
 		width:100%;
 		height: inherit;
 		margin-top: 0;
@@ -926,6 +924,9 @@ textarea {
 	.planos img {
 		background-position-x:0px;
 	}
+	.menu ul {
+		width:200px;
+	}
 	.menu nav li a {
 		font-size:12px;
 	}
@@ -1017,7 +1018,7 @@ textarea {
 	}
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:515px) {
 	.logo-s1se-01 {
 		width:156px;
 		height:61px;
