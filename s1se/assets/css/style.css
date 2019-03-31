@@ -138,6 +138,7 @@ header {
 .navbar .icone-notif, .navbar .num-notif {
 	display:none;
 }
+
 .user-options {	
 	display: flex;
 	align-items: center;
@@ -176,6 +177,10 @@ header {
 	margin-top:0;
 	border:0;
 	margin-left:0;
+}
+.notif li {
+	border:1px solid #bababa;
+	padding:15px;
 }
 .icone-notif {
 	margin-top:10px;	
@@ -230,6 +235,11 @@ header {
 }
 .btn_entrar {
 	float:right;	
+}
+.nav-link img {
+	width:24px;
+	height:24px;
+	margin-right:10px;
 }
 .hero {
 	background-color:#DDDDDD;
@@ -320,6 +330,9 @@ header {
 .dropdown-menu.show {
 	padding-left:15px;
 	padding-right:15px;
+}
+.dropdown-menu.notif {
+	padding:0;
 }
 .busca_avancada a{
 	color:#FFFFFF;
@@ -771,6 +784,7 @@ textarea {
 		padding-left:0px;		
 		float:right;
 		margin-bottom:0;
+		width:200px;
 	}
 	.menu li {
 		background-color:#FFFFFF;		
@@ -778,15 +792,16 @@ textarea {
 		height: inherit;
 		margin-top: 0;
 		z-index:999;
-		text-align:center;
-		padding:15px;
+		text-align:center;		
 		margin-left:0;
 	}
-	#navbarMenu li {
+	#navbarMenu li, .notif li {
 		border:1px solid #bababa;
 	}
 	.menu li a {
 		font-size:20px;
+		display:block;
+		padding:15px;
 	}
 	.navbar {
 		position:relative;
@@ -797,15 +812,17 @@ textarea {
 	.navbar .icone-notif, .navbar .num-notif {
 		display:block;
 	}
+	.navbar .logado {
+		padding:15px;
+	}
 	.navbar .logado .dropdown-menu {
-		margin-top:20px;
-		margin-left:15px;
+		margin-top:20px;		
 		padding-top:0;
 		padding-left:0;
 		padding-right:0;
 		border:0;
-		left:1px;
-		width:inherit;
+		left:-16px;
+		width:200px;
 		top:inherit;
 	}
 	.navbar .logado .img-perfil {
@@ -821,8 +838,16 @@ textarea {
 		left:-32px;
 		top:-5px;
 	}
+	.dropdown-menu {
+		position:relative;
+	}
 	.dropdown-menu.notif {
 		left:inherit;
+		position:absolute;
+		padding:0;
+	}
+	.nav-perfil {
+		width:100%;
 	}
 	header .col-sm-4 {
 		display:none;
@@ -916,9 +941,6 @@ textarea {
 		width:184px;
 		height:65px;
 	}
-	.navbar {
-		width:305%;
-	}
 	.o-que-fazemos .container,
 	.planos .container {
 		padding-left:0px;
@@ -937,7 +959,7 @@ textarea {
 		margin-top:10px;
 	}
 	.dropdown-menu.notif {
-		left:0;
+		left:inherit;
 	}
 	header .col-sm-2 {
 		width:50%;
@@ -1028,7 +1050,7 @@ textarea {
 	}
 	.menu {
 		margin-top:20px;
-	}
+	}	
     .modal-header,
 	.modal-body,	
 	.modal-footer {

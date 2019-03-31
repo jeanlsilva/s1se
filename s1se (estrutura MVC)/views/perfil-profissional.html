@@ -1,0 +1,117 @@
+<div class="maincontent">
+		<div class="container">
+			<h1>Bem-vindo(a), <strong>Usuário</strong></h1>
+			<div class="bottom-navbar">
+				<ul class="nav">
+				  <li class="nav-item">					  	
+				    <a class="nav-link active" href="#"><img src="assets/images/meu-perfil.svg">Meu Perfil</a>
+				  </li>
+				  <li class="nav-item">					  	
+				    <a class="nav-link" href="cadastro-startups.html"><img src="assets/images/exp.png">Experiência</a>
+				  </li>
+				  <li class="nav-item">					  	
+				    <a class="nav-link disabled" href="#"><img src="assets/images/chat.svg">Chats</a>
+				  </li>
+				  <li class="nav-item">					  	
+				    <a class="nav-link disabled" href="#"><img src="assets/images/alterar-senha.svg">Alterar Senha</a>
+				  </li>
+				</ul>
+			</div>
+			<div id="#first">
+				<div class="logo-startup" style="display:block;">
+					<div class="logo-field">
+						LOGO
+					</div>
+					<div class="add-img" data-toggle="modal" data-target="#opt-upload">
+						+
+					</div>
+					<div class="modal fade" id="opt-upload">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<a href="#" data-dismiss="modal">Cancelar</a>
+								</div>
+								<div class="modal-body">
+									<label for="file-upload" class="custom-file-upload">Tirar uma foto</label>
+									<input id="file-upload" type="file" name="img" accept="image/jpg, image/png" />
+								</div>
+								<div class="modal-footer">
+									<a href="#">Procurar na galeria</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form action="" method="post" id="form-data">	
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-6">
+								<label for="name">Nome Completo</label>
+								<input type="text" name="name" id="name" class="form-control" placeholder="teste">
+							</div>
+							<div class="col-sm-6">
+								<label for="email">E-mail</label>
+								<input type="text" name="email" id="email" class="form-control">
+							</div>
+						</div>
+					</div>				
+					<div class="form-group">
+						<label for="categorias">Competências</label>
+						<input type="text" data-role="tagsinput" value="Marketing, Design, Social Media" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="cargo">Cargo</label>
+						<input type="text" name="cargo" id="cargo" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="site">Site</label>
+						<input type="text" name="site" id="site" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="linkedin">Linkedin</label>
+						<input type="text" name="linkedin" id="linkedin" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="instagram">Instagram</label>
+						<input type="text" name="instagram" id="instagram" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="facebook">Facebook</label>
+						<input type="text" name="facebook" id="facebook" class="form-control">
+					</div>			
+					<div class="form-group">
+						<label for="twitter">Twitter</label>
+						<input type="text" name="twitter" id="twitter" class="form-control">
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-4">
+								<label for="pais">País</label>
+								<select name="pais" id="pais" class="form-control">
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<label for="estado">Estado</label>
+								<select name="estado" id="estado" class="form-control">
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<label for="cidade">Cidade</label>
+								<select name="cidade" id="cidade" class="form-control">
+								</select>
+							</div>	
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="resumo">Resumo</label>
+						<textarea name="resumo" id="resumo" class="form-control" rows="4"></textarea>
+					</div>
+					<div class="form-group">
+						<div class="btn-confirmar startup">
+							<a href="#" id="next-2">Salvar alterações</a>
+						</div>
+					</div>
+			    </form>
+			</div>
+	   	</div>
+	</div>

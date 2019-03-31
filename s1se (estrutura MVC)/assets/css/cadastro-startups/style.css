@@ -2,7 +2,7 @@
 
 	color:#707070;
 }
-h1 {
+.startups h1 {
 	font-size:30px;
 	font-weight:300;
 	line-height:1.87;
@@ -11,11 +11,11 @@ h1 {
 	margin-bottom:20.7px;
 }
 
-strong {
+.startups strong {
 	font-weight:bold;
 	color:#6cb758;
 }
-p {
+.startups p {
 	font-size:18px;
 	font-weight:300;
 	line-height:1.33;
@@ -122,11 +122,11 @@ p {
 	left:110px;
 	bottom:32px;
 }
-#form-data {
+.startups #form-data {
 	width:1007px;
 }
 
-input[type="text"],select {	
+.startup input[type="text"],select {	
 	height:47px;
 	border-radius:11px;
 	border:2px solid #d9d9d9;
@@ -154,10 +154,10 @@ input[type="file"] {
 .custom-file-upload {		
 	cursor:pointer;
 }
-form input[type="radio"] {	
+.startups form input[type="radio"] {	
 	display:none;
 }
-form input[type="radio"] + label:before {
+.startups form input[type="radio"] + label:before {
 	border:1px solid #d9d9d9;
 	content:"\00a0";
 	display:inline-block;
@@ -169,30 +169,29 @@ form input[type="radio"] + label:before {
 	width:30px;
 	border-radius:87.5px;	
 }
-form input[type="radio"]:checked + label:before {	
+.startups form input[type="radio"]:checked + label:before {	
 	background-color:#6cb758;	
 	text-align:center;
 	border:1px solid #6cb758;	
 }
-form input[type="radio"] + label {
+.startups form input[type="radio"] + label {
 	font-size:20px;
 	font-weight:300;
 	color:#707070;
 	margin-bottom:20px;
 }
-#third,#sixth {
+.startups #third,#sixth {
 	margin-top:45px;
 }
-#third .form-group {
+.startups #third .form-group {
 	margin-bottom:26px;
 }
-#third .form-group h5, #fourth .form-group h5, .form-group label {
+.startups #third .form-group h5, .startups #fourth .form-group h5, .startups .form-group label {
 	margin-bottom:17px;
 	color:#707070;
 	font-weight:300;
 	font-size:18px;
 }
-
 #membros {
 	width:489px;
 	margin-top:24px;
@@ -251,13 +250,13 @@ form input[type="radio"] + label {
 	width:70px;
 	height:70px;
 }
-#seventh h1 {
+.startups #seventh h1 {
 	font-size:18px;
 	font-weight:300;
 	line-height:1.33;
 	color:#707070;
 }
-#seventh .grid .item {
+.startups #seventh .grid .item {
 	font-size:20px;
 	width:422.6px;
 	height:47px;
@@ -267,24 +266,24 @@ form input[type="radio"] + label {
 	padding-right:12px;
 	padding-top: 6px;
 }
-#seventh .grid .item a {
+.startups #seventh .grid .item a {
 	float:right;
 	font-size:15px;
 	color:#eaeaea;
 	margin-left:5px;
 	margin-right:5px;
 }
-#seventh .grid .item a:hover {
+.startups #seventh .grid .item a:hover {
 	color:#aaaaaa;
 }
-#seventh .grid .add {
+.startups #seventh .grid .add {
 	text-align:center;
 	padding-top:0;
 }
-#seventh .grid .add a {
+.startups #seventh .grid .add a {
 	float:none;
 }
-#next-7 svg {
+.startups #next-7 svg {
 	margin-top:10px;
 	width:27px;
 	height:27px;
