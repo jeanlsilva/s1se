@@ -897,7 +897,7 @@ textarea {
 	margin-bottom:18px;
 }
 ::-webkit-input-placeholder  {
-	color:pink;
+	color:#CCCCCC;
 	opacity:1;
 }
 
@@ -1467,7 +1467,7 @@ form input[type="checkbox"]:checked + label:after {
 	background-image:url('../images/close.svg');
 	background-position-x:-137px;
 }
-.busca-geral .bottom .row a {
+.busca-geral .item .bottom .row a {
 	width:57px;
 	height:57px;	
 	background-size:cover;
@@ -1476,26 +1476,30 @@ form input[type="checkbox"]:checked + label:after {
 .busca-geral .grid .item .startups{
 	background-image:url('../images/inoveduc.png');
 }
-#resultados-profissionais .grid {
+.resultados-geral {
+	background-image:url('../images/bg-resultados.png');
+	background-position-y:420px;
+}
+.resultados-geral .grid {
 	width:1159px;
 }
-#resultados-profissionais h3 {
+.resultados-geral h3 {
 	margin-bottom:13px;
 }
-#resultados-profissionais .main-info {
+.resultados-geral .main-info {
 	height:398.3px;
 	padding-top:49.8px;
 	border-bottom:2px solid #979797;
 	margin-bottom:55.5px;
 }
-#resultados-profissionais .main-info .row {
+.resultados-geral .main-info .row {
 	justify-content:normal;
 }
-#resultados-profissionais .right {
+.resultados-geral .right {
 	text-align:left;
 	margin-left:60px;
 }
-#resultados-profissionais .right span {
+.resultados-geral .right span {
 	font-size:42px;
 	font-weight:300;
 	line-height:1.36;
@@ -1503,35 +1507,36 @@ form input[type="checkbox"]:checked + label:after {
 	margin-left:26.5px;	
 	margin-right:26.4px;
 }
-#resultados-profissionais .right img:not(.location) {
+.resultados-geral .right img:not(.location) {
 	margin-right:16.4px;
 }
-#resultados-profissionais h2 {
+.resultados-geral h2 {
 	font-size:49px;
 	font-weight:600;
 	line-height:1.35;
 	color:#707070;
 	margin-bottom:29.4px;
 }
-#resultados-profissionais .bottom {
+.resultados-geral .bottom {
 	margin-top:43px;
 }
-#resultados-profissionais .bottom .row {
+.resultados-geral .bottom .row {
 	margin:inherit;
 	width:100%;
 }
-#resultados-profissionais .bottom a {
+.resultados-geral .bottom a {
 	width:89.3px;
 	height:89.3px;
 	margin-right:15.8px;
+	background-size:cover;
 }
-#resultados-profissionais .bottom .btn_opt2 {
+.resultados-geral .bottom .btn_opt2 {
 	background-position-x:-105px;
 }
-#resultados-profissionais .bottom .btn_opt3 {
+.resultados-geral .bottom .btn_opt3 {
 	background-position-x:-210px;
 }
-#resultados-profissionais .text-area {
+.resultados-geral .text-area {
 	background-color:#FFFFFF;
 	padding-top:28px;
 	padding-left:29px;
@@ -1546,38 +1551,93 @@ form input[type="checkbox"]:checked + label:after {
 	line-height:1.7;
 	margin-bottom:39px;
 }
-#resultados-profissionais .text-area span,
-#resultados-profissionais .text-area .exp-item p, {
+.resultados-geral .text-area span,
+.resultados-geral .text-area .exp-item p,
+.resultados-geral .text-area .pitch-item p {
 	font-size:20px;
 	color:#707070;
 }
-#resultados-profissionais #experiencia {
+.resultados-geral #experiencia {
 	height:1228px;	
 }
-#resultados-profissionais #experiencia .exp-item {	
+.resultados-geral #experiencia .exp-item {	
 	margin-bottom:30px;
 }
-#resultados-profissionais #experiencia h4 {
+.resultados-geral #experiencia h4 {
 	margin-bottom:20px;
 }
-#resultados-profissionais #experiencia h5 {
+.resultados-geral #experiencia h5 {
 	font-weight:300;
 }
-#resultados-profissionais #experiencia p {
+.resultados-geral #experiencia p {
 	margin-top:20px;
 }
-#resultados-profissionais #educacao {
+.resultados-geral #educacao {
 	padding-top:27px;
 	padding-left:27.5px;
 	padding-bottom:39px;	
 }
-#resultados-profissionais #educacao .educ-item {
+.resultados-geral #educacao .educ-item {
 	height:77.5px;
 	border-bottom:1px solid #979797;
 	margin-top:20.5px;
 }
-#resultados-profissionais #educacao .educ-item h4 {
+.resultados-geral #educacao .educ-item h4 {
 	line-height:0.5;
+}
+.resultados-geral #pitch {
+	padding-top:48px;
+}
+.resultados-geral #pitch .video-area {
+	width:928px;
+	height:525px;
+	background-color:#979797;
+	margin:auto;
+	margin-bottom:62px;
+}
+.resultados-geral .pitch-item {
+	height:200px;
+	border-bottom:1px solid #979797;
+	padding-top:14.5px;
+}
+.resultados-geral .pitch-item p {
+	line-height:1.33;	
+	padding-bottom:14.5px;
+}
+.resultados-geral #equipe .row {
+	justify-content:normal;
+}
+.resultados-geral #equipe .item {
+	min-width:107.5px;
+	max-width:162px;
+	height:168.4px;
+	margin-right:50px;
+	border:0;
+	box-shadow:none;
+	text-align:center;
+	padding-left:0;
+	padding-right:0;
+}
+.resultados-geral #equipe .item h4 {
+	font-size:19px;
+	font-weight:600;
+	padding-top:14.9px;
+}
+.resultados-geral #equipe .item h5 {
+	font-size:15px;
+	font-weight:300;
+}
+.resultados-geral #equipe .item .logo-img {
+	width:107.5px;
+	height:107.5px;
+	border-radius:53px;
+	margin:auto;
+}
+#resultados-startups .logo-img {
+	background-image:url('../images/inoveduc.png');
+}
+#resultados-startups #equipe .logo-img {
+	background-image:url('../images/elisa-ribeiro.png');
 }
 /***RESPONSIVIDADE***/
 @media screen and (min-width:1300px) {
