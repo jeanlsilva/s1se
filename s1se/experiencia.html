@@ -5,85 +5,384 @@
 		<title>S1SE - Perfil profissional - Experiência</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	</head>
 	<body>
-		<div class="maincontent">
-			<div class="bottom-navbar">
-				<ul class="nav">
-				  <li class="nav-item">					  	
-				    <a class="nav-link" href="#"><img src="assets/images/meu-perfil.svg">Meu Perfil</a>
-				  </li>
-				  <li class="nav-item">					  	
-				    <a class="nav-link active" href="cadastro-startups.html"><img src="assets/images/exp.png">Experiência</a>
-				  </li>
-				  <li class="nav-item">					  	
-				    <a class="nav-link disabled" href="#"><img src="assets/images/chat.svg">Chats</a>
-				  </li>
-				  <li class="nav-item">					  	
-				    <a class="nav-link disabled" href="#"><img src="assets/images/alterar-senha.svg">Alterar Senha</a>
-				  </li>
-				</ul>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="logo">
+							<a href="./">
+								<img src="assets/images/logo.png" class="logo-s1se-01" />
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="menu">
+							<nav class="navbar navbar-expand-lg navbar-light">
+								<img src="assets/images/notif.svg" class="icone-notif" width="34.7" height="35.8" data-toggle="dropdown"/>
+								<!--if notificacoes <=0 -> display:none -->
+								<div class="num-notif">10</div>
+								<div class="dropdown-menu notif">
+									<ul>
+										<li><a href="#">notificação teste 1</a></li>
+										<li><a href="#">notificação teste 2</a></li>
+									</ul>
+								</div>
+							<div class="dropdown">
+								<button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#navbarMenu">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+							</div>
+							<div class="menu navbar-collapse collapse" id="navbarMenu">	
+								<ul>
+									<li>
+										<a href="#">Quem Somos</a>
+									</li>
+									<li>
+										<a href="#">Planos</a>
+									</li>
+									<li>
+										<a href="#">Contato</a>
+									</li>		
+									<!-- if usuario=logado->display:none -->							
+									<div class="deslogado">
+										<li class="btn_cadastro">
+											<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
+										</li>
+										<li class="btn_entrar" data-toggle="modal" data-target="#janela">
+											<a class="Entrar" href="#">Entrar</a>			
+										</li>
+									</div>
+									<!-- if usuario=logado->display:block -->
+									<li class="logado">									
+									<div class="nav-perfil dropdown-toggle" data-toggle="dropdown">										
+										<div class="img-perfil"></div>Nome do Usuário	
+										<div class="dropdown-menu">
+											<ul>
+												<li><a href="../">Home</a></li>
+												<li><a href="../perfil.html">Meu Perfil</a></li>
+												<li><a href="../chat.html">Chat</a></li>
+												<li><a href="../alterar-senha.html">Alterar Senha</a></li>
+												<li><a href="#">Sair</a></li>
+											</ul>
+										</div>										
+									</div>	
+									</li>								
+								</ul>							
+							</div>
+						</nav>
+						</div>
+					</div>
+					<div class="col-sm-4 dropdown">						
+						<!--if usuario=logado->display:none-->
+						<div class="deslogado"> 
+							<div class="btn_cadastro">
+							<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
+							</div>
+							<div class="btn_entrar" data-toggle="modal" data-target="#janela">
+								<a class="Entrar" href="#">Entrar</a>
+							</div>	
+						</div>
+						<!--if usuario=logado->display:flex-->
+						<div class="logado">
+							<img src="assets/images/notif.svg" class="icone-notif" width="34.7" height="35.8" data-toggle="dropdown"/>
+							<!--if notificacoes <=0 -> display:none -->
+							<div class="num-notif">10</div>
+							<div class="dropdown-menu notif">
+								<ul>
+									<li><a href="#">notificação teste 1</a></li>
+									<li><a href="#">notificação teste 2</a></li>
+								</ul>
+							</div>
+							<div class="nav-perfil">
+								<div class="user-options dropdown-toggle" data-toggle="dropdown">
+									<div class="img-perfil"></div>Nome do Usuário	
+									<div class="dropdown-menu">
+										<ul>
+											<li><a href="../">Home</a></li>
+											<li><a href="../perfil.html">Meu Perfil</a></li>
+											<li><a href="../chat.html">Chat</a></li>
+											<li><a href="../alterar-senha.html">Alterar Senha</a></li>
+											<li><a href="#">Sair</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-
-			<div class="form_area">
-				<div class="form-group">
-					<h3>Experiência profissional</h3>
-					<h4>Você ainda não cadastrou nenhuma instituição</h4>
-					<div class="grid">
-						<div class="item add">
-							<a href="#">
-								<svg xmlns="http://www.w3.org/2000/svg" width="45.9" height="45.9" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
-							</a>
+		</header>
+		<div class="maincontent experiencia">
+			<div class="container">
+				<h1>Bem-vindo(a), <strong>Usuário</strong></h1>
+				<div class="bottom-navbar">
+					<ul class="nav">
+					  <li class="nav-item">					  	
+					    <a class="nav-link" href="perfil-profissional.html"><img src="assets/images/meu-perfil.svg">Meu Perfil</a>
+					  </li>
+					  <li class="nav-item">					  	
+					    <a class="nav-link active" href="experiencia.html"><img src="assets/images/exp.png">Experiência</a>
+					  </li>
+					  <li class="nav-item">					  	
+					    <a class="nav-link disabled" href="chat.html"><img src="assets/images/chat.svg">Chats</a>
+					  </li>
+					  <li class="nav-item">					  	
+					    <a class="nav-link disabled" href="#"><img src="assets/images/alterar-senha.svg">Alterar Senha</a>
+					  </li>
+					</ul>
+				</div>				
+				<form action="" method="post" id="form-data">
+					<div id="first">
+						<div class="form-group">
+							<h3>Experiência profissional</h3>
+							<h4>Você ainda não cadastrou nenhuma instituição</h4>
+							<div class="grid">
+								<div class="item">
+									<div class="info">
+										<strong>Inoveduc</strong> | Coordenadora de Projetos
+									</div>
+									<div class="opcoes">
+										<a href="#" class="next-1">Editar Experiência</a>|
+										<a href="#">Excluir Experiência</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="info">
+										<strong>Viva Rio</strong> | Designer
+									</div>
+									<div class="opcoes">
+										<a href="#" class="next-1">Editar Experiência</a>|
+										<a href="#">Excluir Experiência</a>
+									</div>
+								</div>
+								<div class="item add">
+									<a href="#" class="next-1">
+										<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
+									</a>
+									<div class="item hover">
+										Para cadastrar <strong>experiências ilimitadas</strong>, confira nossos planos!
+										<div class="contratar">
+											<a href="#">Contratar</a>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div class="form-group">
+							<h3>Educação</h3>
+							<h4>Você ainda não cadastrou nenhuma instituição</h4>
+							<div class="grid">
+								<div class="item">
+									<div class="info">
+										<strong>IBMEC-RJ</strong> | CBA Marketing
+									</div>
+									<div class="opcoes">
+										<a href="#" class="next-2">Editar Experiência</a> |
+										<a href="#">Excluir Experiência</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="info">
+										<strong>PUC-RIO</strong> | Design Gráfico
+									</div>
+									<div class="opcoes">
+										<a href="#" class="next-2">Editar Experiência</a> |
+										<a href="#">Excluir Experiência</a>
+									</div>
+								</div>
+								<div class="item">
+									<div class="info">
+										<strong>M2BR</strong> | Inbound Marketing
+									</div>
+									<div class="opcoes">
+										<a href="#" class="next-2">Editar Experiência</a> |
+										<a href="#">Excluir Experiência</a>
+									</div>
+								</div>
+								<div class="item add">
+									<a href="#" class="next-2">
+										<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
+									</a>
+									<div class="item hover">
+										Para cadastrar <strong>instituições ilimitadas</strong>, confira nossos planos!
+										<div class="contratar">
+											<a href="#">Contratar</a>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div class="form-group">
+							<h3>Habilidades</h3>
+							<h4>Você ainda não cadastrou nenhuma habilidade</h4>
+							<div class="grid">
+								<input type="text" data-role="tagsinput" value="Html, Javascript, Phyton" class="form-control">
+								<div class="item add">
+									<a href="#" class="next-3">
+										<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
+									</a>
+									<div class="item hover">
+										Para cadastrar <strong>habilidades ilimitadas</strong>, confira nossos planos!
+										<div class="contratar">
+											<a href="#">Contratar</a>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div class="form-group">
+							<h3>Links importantes</h3>
+							<h4>Divulgue seus trabalhos na web</h4>
+							<div class="grid">
+								<div class="item">
+									<div class="info">
+										<strong>Portfólio Elisa Ribeiro</strong> | http://bit.ly/portfolio-elisa-ribeiro
+									</div>
+									<div class="opcoes">
+										<a href="#" class="next-4">Editar Experiência</a> |
+										<a href="#">Excluir Experiência</a>
+									</div>
+								</div>
+								<div class="item add">
+									<a href="#" class="next-4">
+										<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
+									</a>
+									<div class="item hover">
+										Para cadastrar <strong>links ilimitados</strong>, confira nossos planos!
+										<div class="contratar">
+											<a href="#">Contratar</a>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div class="form-group">
+							<h3>Visível para:</h3>
+							<input type="radio" name="visibilidade1" id="todos1" value="todos1">
+							<label for="todos1">Todos</label><br>
+							<input type="radio" name="visibilidade1" id="empreendedores1" value="empreendedores1">
+							<label for="empreendedores1">Empreendedores</label><br>
+							<input type="radio" name="visibilidade1" id="investidores1" value="investidores1">
+							<label for="investidores1">Investidores</label><br>
+							<input type="radio" name="visibilidade1" id="fornecedores1" value="fornecedores1">
+							<label for="fornecedores1">Fornecedores</label><br>
+							<input type="radio" name="visibilidade1" id="n-visivel1" value="n-visivel1">
+							<label for="n-visivel1">Não deixar visível</label><br>
 						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<h3>Educação</h3>
-					<h4>Você ainda não cadastrou nenhuma instituição</h4>
-					<div class="grid">
-						<div class="item add">
-							<a href="#">
-								<svg xmlns="http://www.w3.org/2000/svg" width="45.9" height="45.9" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
-							</a>
+					<div id="second">
+						<div class="form-group">
+							<label for="instituicao">Instutuição</label>
+							<input type="text" id="instituicao" class="form-control">							
+						</div>
+						<div class="form-group">
+							<label for="cargo">Cargo</label>
+							<input type="text" id="cargo" class="form-control">
+						</div>
+						<div class="form-row">
+							<div class="col">
+								<label for="inicio">Início</label>
+								<input type="text" id="inicio" class="form-control" placeholder="dd/mm/aaaa">
+							</div>
+							<div class="col">
+								<label for="fim">Fim</label>
+								<input type="text" id="fim" class="form-control" placeholder="dd/mm/aaaa">
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="check-exp" name="check" value="check1">
+							<label for="check-exp">Ainda trabalho aqui</label>
+						</div>
+						<div class="form-group">
+							<textarea name="descricao" id="descricao" class="form-control" rows="3" placeholder="Máx 200 caracteres"></textarea>
+						</div>
+						<div class="form-group btn">
+							<div class="btn-confirmar salvar-nova">
+								<a href="#" id="salvar-nova">Salvar e cadastrar nova</a>
+							</div>
+							<div class="btn-confirmar">
+								<a href="#" id="next-2">Salvar alterações</a>
+							</div>							
 						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<h3>Habilidades</h3>
-					<h4>Você ainda não cadastrou nenhuma habilidade</h4>
-					<div class="grid">
-						<div class="item add">
-							<a href="#">
-								<svg xmlns="http://www.w3.org/2000/svg" width="45.9" height="45.9" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
-							</a>
+					<div id="third">
+						<div class="form-group">
+							<label for="instituicao">Instutuição</label>
+							<input type="text" id="instituicao" class="form-control">							
+						</div>
+						<div class="form-group">
+							<label for="curso">Curso</label>
+							<input type="text" id="curso" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="tipo_curso">Tipo de Curso</label>
+							<input type="text" id="tipo_curso" class="form-control">
+						</div>
+						<div class="form-row">
+							<div class="col">
+								<label for="inicio">Início</label>
+								<input type="text" id="inicio" class="form-control" placeholder="dd/mm/aaaa">
+							</div>
+							<div class="col">
+								<label for="fim">Fim</label>
+								<input type="text" id="fim" class="form-control" placeholder="dd/mm/aaaa">
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="check-exp" name="check" value="check1">
+							<label for="check-exp">Ainda trabalho aqui</label>
+						</div>
+						<div class="form-group">
+							<label for="descricao">Descrição</label>
+							<textarea name="descricao" id="descricao" class="form-control" rows="3" placeholder="Máx 200 caracteres"></textarea>
+						</div>
+						<div class="form-group btn">
+							<div class="btn-confirmar salvar-nova">
+								<a href="#" id="salvar-nova">Salvar e cadastrar nova</a>
+							</div>
+							<div class="btn-confirmar">
+								<a href="#" id="next-2">Salvar alterações</a>
+							</div>							
 						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<h3>Links importantes</h3>
-					<h4>Divulgue seus trabalhos na web</h4>
-					<div class="grid">
-						<div class="item add">
-							<a href="#">
-								<svg xmlns="http://www.w3.org/2000/svg" width="45.9" height="45.9" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z"></path></svg>
-							</a>
+					<div id="fourth">
+						<div class="form-group">
+							<label for="habilidade">Habilidades</label>
+							<input id="habilidade" type="text" data-role="tagsinput" value="Html, Javascript, Phyton" class="form-control">
+						</div>
+						<div class="form-group btn">							
+							<div class="btn-confirmar">
+								<a href="#" id="next-2">Salvar alterações</a>
+							</div>							
 						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<h3>Visível para:</h3>
-					<input type="radio" name="visibilidade1" id="todos1" value="todos1">
-					<label for="todos1">Todos</label><br>
-					<input type="radio" name="visibilidade1" id="empreendedores1" value="empreendedores1">
-					<label for="empreendedores1">Empreendedores</label><br>
-					<input type="radio" name="visibilidade1" id="investidores1" value="investidores1">
-					<label for="investidores1">Investidores</label><br>
-					<input type="radio" name="visibilidade1" id="fornecedores1" value="fornecedores1">
-					<label for="fornecedores1">Fornecedores</label><br>
-					<input type="radio" name="visibilidade1" id="n-visivel1" value="n-visivel1">
-					<label for="n-visivel1">Não deixar visível</label><br>
-				</div>
+					<div id="fifth">
+						<div class="form-group">
+							<label for="titulo">Título</label>
+							<input type="text" id="titulo" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="url">URL</label>
+							<input type="text" id="url" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="descricao">Descrição</label>
+							<textarea name="descricao" id="descricao" class="form-control" rows="3" placeholder="Máx 200 caracteres"></textarea>
+						</div>
+						<div class="form-group btn">
+							<div class="btn-confirmar salvar-nova">
+								<a href="#" id="salvar-nova">Salvar e cadastrar nova</a>
+							</div>
+							<div class="btn-confirmar">
+								<a href="#" id="next-2">Salvar alterações</a>
+							</div>							
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 		<script src="assets/js/jquery.min.js"></script>				

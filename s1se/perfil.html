@@ -2,93 +2,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>S1SE - Cadastro de usuários</title>
+	<title>S1SE - Meu Perfil</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/cadastro-startups/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">	
 	<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
 	<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="logo">
-							<a href="#">
-								<img src="assets/images/logo.png" class="logo-s1se-01" />
-							</a>
-						</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="logo">
+						<a href="../">
+							<img src="assets/images/logo.png" class="logo-s1se-01" />
+						</a>
 					</div>
-					<div class="col-sm-6">
-						<div class="menu">
-							<nav class="navbar navbar-expand-lg navbar-light">
-								<img src="assets/images/notif.svg" class="icone-notif" width="34.7" height="35.8" data-toggle="dropdown"/>
-								<!--if notificacoes <=0 -> display:none -->
-								<div class="num-notif">10</div>
-								<div class="dropdown-menu notif">
-									<ul>
-										<li><a href="#">notificação teste 1</a></li>
-										<li><a href="#">notificação teste 2</a></li>
-									</ul>
-								</div>
-							<div class="dropdown">
-								<button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#navbarMenu">
-									<span class="navbar-toggler-icon"></span>
-								</button>
-							</div>
-							<div class="menu navbar-collapse collapse" id="navbarMenu">	
-								<ul>
-									<li>
-										<a href="#">Quem Somos</a>
-									</li>
-									<li>
-										<a href="#">Planos</a>
-									</li>
-									<li>
-										<a href="#">Contato</a>
-									</li>		
-									<!-- if usuario=logado->display:none -->							
-									<div class="deslogado">
-										<li class="btn_cadastro">
-											<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
-										</li>
-										<li class="btn_entrar" data-toggle="modal" data-target="#janela">
-											<a class="Entrar" href="#">Entrar</a>			
-										</li>
-									</div>
-									<!-- if usuario=logado->display:block -->
-									<li class="logado">									
-									<div class="nav-perfil dropdown-toggle" data-toggle="dropdown">										
-										<div class="img-perfil"></div>Nome do Usuário	
-										<div class="dropdown-menu">
-											<ul>
-												<li><a href="../">Home</a></li>
-												<li><a href="../perfil.html">Meu Perfil</a></li>
-												<li><a href="../chat.html">Chat</a></li>
-												<li><a href="../alterar-senha.html">Alterar Senha</a></li>
-												<li><a href="#">Sair</a></li>
-											</ul>
-										</div>										
-									</div>	
-									</li>								
-								</ul>							
-							</div>
-						</nav>
-						</div>
-					</div>
-					<div class="col-sm-4 dropdown">						
-						<!--if usuario=logado->display:none-->
-						<div class="deslogado"> 
-							<div class="btn_cadastro">
-							<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
-							</div>
-							<div class="btn_entrar" data-toggle="modal" data-target="#janela">
-								<a class="Entrar" href="#">Entrar</a>
-							</div>	
-						</div>
-						<!--if usuario=logado->display:flex-->
-						<div class="logado">
+				</div>
+				<div class="col-sm-6">
+					<div class="menu">
+						<nav class="navbar navbar-expand-lg navbar-light">
 							<img src="assets/images/notif.svg" class="icone-notif" width="34.7" height="35.8" data-toggle="dropdown"/>
 							<!--if notificacoes <=0 -> display:none -->
 							<div class="num-notif">10</div>
@@ -98,8 +31,34 @@
 									<li><a href="#">notificação teste 2</a></li>
 								</ul>
 							</div>
-							<div class="nav-perfil">
-								<div class="user-options dropdown-toggle" data-toggle="dropdown">
+						<div class="dropdown">
+							<button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#navbarMenu">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+						</div>
+						<div class="menu navbar-collapse collapse" id="navbarMenu">	
+							<ul>
+								<li>
+									<a href="#">Quem Somos</a>
+								</li>
+								<li>
+									<a href="#">Planos</a>
+								</li>
+								<li>
+									<a href="#">Contato</a>
+								</li>		
+								<!-- if usuario=logado->display:none -->							
+								<div class="deslogado">
+									<li class="btn_cadastro">
+										<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
+									</li>
+									<li class="btn_entrar" data-toggle="modal" data-target="#janela">
+										<a class="Entrar" href="#">Entrar</a>			
+									</li>
+								</div>
+								<!-- if usuario=logado->display:block -->
+								<li class="logado">									
+								<div class="nav-perfil dropdown-toggle" data-toggle="dropdown">										
 									<div class="img-perfil"></div>Nome do Usuário	
 									<div class="dropdown-menu">
 										<ul>
@@ -109,15 +68,55 @@
 											<li><a href="../alterar-senha.html">Alterar Senha</a></li>
 											<li><a href="#">Sair</a></li>
 										</ul>
-									</div>
+									</div>										
+								</div>	
+								</li>								
+							</ul>							
+						</div>
+					</nav>
+					</div>
+				</div>
+				<div class="col-sm-4 dropdown">						
+					<!--if usuario=logado->display:none-->
+					<div class="deslogado"> 
+						<div class="btn_cadastro">
+						<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
+						</div>
+						<div class="btn_entrar" data-toggle="modal" data-target="#janela">
+							<a class="Entrar" href="#">Entrar</a>
+						</div>	
+					</div>
+					<!--if usuario=logado->display:flex-->
+					<div class="logado">
+						<img src="assets/images/notif.svg" class="icone-notif" width="34.7" height="35.8" data-toggle="dropdown"/>
+						<!--if notificacoes <=0 -> display:none -->
+						<div class="num-notif">10</div>
+						<div class="dropdown-menu notif">
+							<ul>
+								<li><a href="#">notificação teste 1</a></li>
+								<li><a href="#">notificação teste 2</a></li>
+							</ul>
+						</div>
+						<div class="nav-perfil">
+							<div class="user-options dropdown-toggle" data-toggle="dropdown">
+								<div class="img-perfil"></div>Nome do Usuário	
+								<div class="dropdown-menu">
+									<ul>
+										<li><a href="../">Home</a></li>
+										<li><a href="../perfil.html">Meu Perfil</a></li>
+										<li><a href="../chat.html">Chat</a></li>
+										<li><a href="../alterar-senha.html">Alterar Senha</a></li>
+										<li><a href="#">Sair</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-	<div class="maincontent">
+		</div>
+	</header>
+	<div class="maincontent startups">
 		<div class="container">
 			<h1>Bem-vindo(a), <strong>Usuário</strong></h1>
 				<div class="bottom-navbar">

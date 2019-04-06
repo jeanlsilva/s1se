@@ -53,7 +53,7 @@ $(document).ready(function() {
 	  alertify.prompt().set({'reverseButtons': true});
 	}
 
-	$("#next-1").click(function() {
+	$(".next-1").click(function() {
 		$("#second").show();
 		$(".logo-startup").show();
 		$("#first").hide();		
@@ -61,52 +61,55 @@ $(document).ready(function() {
 		$("#progressBar").css({"width":"50%"});		
 	});
 
-	$("#prev-2").click(function() {
+	$(".prev-2").click(function() {
 		$("#first").show();
 		$("#second").hide();
 		$("#label").html("Precisamos de alguns dados:");
 		$("#progressBar").css({"width":"1%"});		
 	});
 
-	$("#next-2").click(function() {
+	$(".next-2").click(function() {
 		$("#third").show();
 		$("#second").hide();
+		$("#first").hide();
 		$("#label").html("Seu cadastro foi realizado <strong>com sucesso!</strong>");
 		$("#progressBar").css({"width":"95%"});		
 	});
 
-	$("#next-3").click(function() {
+	$(".next-3").click(function() {
 		$("#fourth").show();
 		$("#third").hide();
+		$("#first").hide();
 		$("#label").html("Olá, nome cadastrado!<br>Que bom você aqui na <strong>S1SE</strong>.<br>Selecione <strong>o seu perfil</strong> abaixo:");
 		$("#progressBar").css({"display":"none"});		
 		$(".ellipse").css({"display":"none"});	
 	});
 
-	$("#next-4").click(function() {
+	$(".next-4").click(function() {
 		$("#fifth").show();
 		$("#fourth").hide();
+		$("#first").hide();
 		$("#label").html("Olá, nome cadastrado!<br>Que bom você aqui na <strong>S1SE</strong>.<br>Selecione <strong>o seu perfil</strong> abaixo:");
 		$("#progressBar").css({"display":"none"});		
 		$(".ellipse").css({"display":"none"});	
 	});
 
-	$("#next-5").click(function() {
+	$(".next-5").click(function() {
 		$("#sixth").show();
 		$("#fifth").hide();
 		$("#label").html("Olá, nome cadastrado!<br>Que bom você aqui na <strong>S1SE</strong>.<br>Selecione <strong>o seu perfil</strong> abaixo:");
 		$("#progressBar").css({"display":"none"});		
 		$(".ellipse").css({"display":"none"});	
 	});
-	$("#next-6").click(function() {
+	$(".next-6").click(function() {
 		$("#seventh").show();
 		$("#sixth").hide();		
 	});
-	$("#next-7").click(function() {
+	$(".next-7").click(function() {
 		$("#eighth").show();
 		$("#seventh").hide();		
 	});
-	$("#next-8").click(function() {
+	$(".next-8").click(function() {
 		$("#first").show();
 		$("#seventh").hide();
 		$("#eighth").hide();		
@@ -151,12 +154,12 @@ $(document).ready(function() {
 function habilitar() {
 	if(document.getElementById('accept').checked) {
 		document.getElementById('linkspan').style["pointer-events"] = "auto";
-		document.getElementById('next-2').style["cursor"] = "pointer";
-		document.getElementById('next-2').style["opacity"] = "1";
+		document.getElementById('confirmar').style["cursor"] = "pointer";
+		document.getElementById('confirmar').style["opacity"] = "1";
 	} else {
 		document.getElementById('linkspan').style["pointer-events"] = "none";
-		document.getElementById('next-2').style["cursor"] = "not-allowed";
-		document.getElementById('next-2').style["opacity"] = "0.5";
+		document.getElementById('confirmar').style["cursor"] = "not-allowed";
+		document.getElementById('confirmar').style["opacity"] = "0.5";
 	}
 }
 function pesquisar() {
