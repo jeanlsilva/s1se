@@ -739,6 +739,9 @@ footer .bottom .col-sm-5 {
 	font-weight:300;
 	line-height:3.5;
 }
+.bootstrap-tagsinput span {
+	display:ruby;
+}
 .bootstrap-tagsinput {
 	height:inherit;
 	border-radius:11px !important;
@@ -1259,7 +1262,7 @@ form input[type="checkbox"]:checked + label:after {
 	color:#c6c6c6;
 }
 .add:hover .hover {
-	display:block;
+	z-index:999;
 }
 .experiencia .hover {
 	background-color:#6cb758;
@@ -1269,8 +1272,10 @@ form input[type="checkbox"]:checked + label:after {
 	left:-18px;
 	opacity:0.8;
 	font-size:16px;
-	text-align:center;	
-	display:none;
+	text-align:left;	
+	padding-left:40px !important;
+	padding-right:0 !important;
+	z-index:-1;
 }
 .experiencia .grid .item.hover strong {
 	color:#FFFFFF;
@@ -1288,6 +1293,9 @@ form input[type="checkbox"]:checked + label:after {
 	height:30px;
 	padding-top:5px;	
 }
+.experiencia .item.hover .text {
+	color:#FFFFFF;	
+}
 .experiencia .item.add {	
 	background-color:#FFFFFF;
 }
@@ -1297,7 +1305,7 @@ form input[type="checkbox"]:checked + label:after {
 .experiencia .item.hover .contratar {
 	float:right;
 	position:relative;
-	bottom:2px;
+	bottom:28px;
 	right:54.6px;
 	text-align:center;
 }
@@ -1356,6 +1364,7 @@ form input[type="checkbox"]:checked + label:after {
 .busca-geral {
 	background-image:url('../images/bg-busca.png');
 	background-repeat:no-repeat;
+	background-position-y:-542px;
 	background-size:cover;
 	margin-top:47px;
 	margin-bottom:173px;	
@@ -1633,6 +1642,10 @@ form input[type="checkbox"]:checked + label:after {
 	border-radius:53px;
 	margin:auto;
 }
+.resultados-geral .video-area video {
+	width:928px;
+	height:525px;
+}
 #resultados-startups .logo-img {
 	background-image:url('../images/inoveduc.png');
 }
@@ -1679,6 +1692,37 @@ form input[type="checkbox"]:checked + label:after {
 }
 @media screen and (max-width:1199px) {
 	.experiencia #form-data,.startups #form-data,#numero, #complemento, #bairro, #pais, #estado, #cidade {
+		width:100%;
+	}	
+}
+@media screen and (max-width:1024px) {
+	.resultados-geral .grid {
+		max-width:100%;
+	}
+	.resultados-geral .main-info {
+		max-width:100%;
+		height:auto;
+	}
+	.resultados-geral .main-info .row {
+		justify-content: space-around;
+	}
+	.resultados-geral .main-info .row .right {
+		min-width:431px;
+		max-width:65%;
+	}
+	.resultados-geral .main-info .row .right .location {
+		margin-bottom:25px;
+	}
+	.resultados-geral .main-info .row .right .bottom {
+		margin-bottom:13px;
+	}
+	.resultados-geral #experiencia,
+	.resultados-geral #pitch,
+	.resultados-geral #pitch .pitch-item {
+		height:auto;
+	}
+	.resultados-geral #pitch .video-area video,
+	.resultados-geral #pitch .video-area {
 		width:100%;
 	}	
 }
@@ -1743,7 +1787,7 @@ form input[type="checkbox"]:checked + label:after {
 	}
 	.navbar .num-notif {
 		left:-32px;
-		top:-5px;
+		top:-10px;
 	}
 	.dropdown-menu {
 		position:relative;
@@ -1829,7 +1873,9 @@ form input[type="checkbox"]:checked + label:after {
 	}
 	.experiencia .grid .item.hover {
 		left:0;
+		font-size:14px;
 	}
+
 }
 @media screen and (max-width:768px) {
 	.grid {
@@ -1859,7 +1905,45 @@ form input[type="checkbox"]:checked + label:after {
 	.usuarios #fourth label {
 	    height:90px;
 	    padding-right:0;
+	}
+	.experiencia .grid .item {
+		height:auto;
+	}
+	.experiencia .grid .item .info,
+	.experiencia .grid .item .opcoes {
+		float:none;
+	}
+	.experiencia .grid .item.add {
+		height:auto;
+		padding-top:0;
+	}
+	.experiencia .grid .item.add svg {
+		margin-top:23px;
+		position:absolute;
+
+	}
+	.experiencia .grid .item.hover {
+		padding-top:5px;
+		padding-left:0 !important;
+		min-height:47px;
+		height:auto;
+		margin-bottom:0;		
+		bottom:0;
 	}	
+	.experiencia .grid .item.hover .text {		
+		text-align:center;	
+		color:#FFFFFF;	
+	}	
+	.experiencia .grid .item .hover .contratar {
+		float:none;
+		bottom:0;
+		right:0;
+		width:141px;
+		margin:auto;
+	}
+	.experiencia .grid .item .hover .contratar a {
+		float:none;
+	}
 }
 @media screen and (max-width:660px) {
 	.busca, .busca_avancada {
@@ -2113,6 +2197,9 @@ form input[type="checkbox"]:checked + label:after {
 	}
 	.navbar .icone-notif {
 		margin-right:0;
+	}
+	.navbar .num-notif {
+		left:-12px;
 	}
 	.busca input[type='text'] {		
 		height:50px;
