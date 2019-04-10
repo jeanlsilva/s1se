@@ -745,7 +745,8 @@ footer .bottom .col-sm-5 {
 .bootstrap-tagsinput {
 	height:inherit;
 	border-radius:11px !important;
-	width:1007px;
+	width:100%;
+	max-width:1007px;
 	padding-top:20px !important;
 }
 .logo-startup {
@@ -884,8 +885,8 @@ textarea {
 	left:110px;
 	bottom:32px;
 }
-.startups #form-data, .experiencia #form-data {
-	width:1007px;
+.startups #form-data, .experiencia #form-data,  {
+	max-width:1007px;
 }
 
 .startup input[type="text"],select {	
@@ -1614,7 +1615,7 @@ form input[type="checkbox"]:checked + label:after {
 	padding-bottom:14.5px;
 }
 .resultados-geral #equipe .row {
-	justify-content:normal;
+	justify-content:center;
 }
 .resultados-geral #equipe .item {
 	min-width:107.5px;
@@ -1689,6 +1690,16 @@ form input[type="checkbox"]:checked + label:after {
 	.experiencia input {
 		width:100%;
 	}
+	.busca-geral .grid {
+		width:100%;
+	}
+	.busca-geral .grid .row {
+		justify-content:center;
+	}
+	.busca-geral .grid .item {
+		margin-right:10px;
+		margin-left:10px;
+	}
 }
 @media screen and (max-width:1199px) {
 	.experiencia #form-data,.startups #form-data,#numero, #complemento, #bairro, #pais, #estado, #cidade {
@@ -1712,18 +1723,22 @@ form input[type="checkbox"]:checked + label:after {
 	}
 	.resultados-geral .main-info .row .right .location {
 		margin-bottom:25px;
+		position:relative;
+		left:10px;
 	}
 	.resultados-geral .main-info .row .right .bottom {
 		margin-bottom:13px;
 	}
 	.resultados-geral #experiencia,
 	.resultados-geral #pitch,
-	.resultados-geral #pitch .pitch-item {
+	.resultados-geral #pitch .pitch-item,
+	.resultados-geral #detalhes {
 		height:auto;
 	}
 	.resultados-geral #pitch .video-area video,
 	.resultados-geral #pitch .video-area {
 		width:100%;
+		height:auto;
 	}	
 }
 @media screen and (max-width:991px) {
@@ -1944,6 +1959,12 @@ form input[type="checkbox"]:checked + label:after {
 	.experiencia .grid .item .hover .contratar a {
 		float:none;
 	}
+	.resultados-geral #educacao .educ-item {
+		height:auto;
+	}
+	.resultados-geral #educacao .educ-item h4 {
+		line-height:1;
+	}
 }
 @media screen and (max-width:660px) {
 	.busca, .busca_avancada {
@@ -1972,6 +1993,10 @@ form input[type="checkbox"]:checked + label:after {
 		background-position-x:0px;
 		margin-bottom:0px;
 	}
+	.busca-geral .grid .main-info .right {
+		margin-left:0;
+		text-align:center;
+	}
 }
 @media screen and (max-width:618px) {
 	.nav {
@@ -1985,6 +2010,9 @@ form input[type="checkbox"]:checked + label:after {
 	.grid .item {
 		width:100%;
 		padding-top:10px;
+	}
+	.busca-geral .grid .item {
+		height:auto;
 	}
 }
 @media screen and (max-width:581px) {
@@ -2086,6 +2114,9 @@ form input[type="checkbox"]:checked + label:after {
 	.nosso_time .bottom .right {
 		background-position-x:-60px;
 	}
+	.busca-geral .grid .logo-img {
+		margin:auto;
+	}
 }
 
 @media screen and (max-width:575px) {
@@ -2170,6 +2201,9 @@ form input[type="checkbox"]:checked + label:after {
 		width:268px;
 		padding-top:32px;
 	}
+	.resultados-geral .right span {
+		font-size:34px;
+	}
 }
 @media screen and (max-width:415px)  {
 	.col {
@@ -2189,6 +2223,18 @@ form input[type="checkbox"]:checked + label:after {
 	}
 	.menu nav li a {
 		margin:0;
+	}
+	.busca-geral .grid .tags {
+		height:auto;
+	}
+	.busca-geral .grid .main-info .right {
+		min-width:320px;		
+	}
+	.busca-geral .grid .main-info .right h2 { 
+		font-size:35px;
+	}
+	.busca-geral .grid .main-info .right span {
+		font-size:25px;
 	}
 }
 @media screen and (max-width:375px) {
