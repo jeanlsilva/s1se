@@ -521,6 +521,7 @@ header {
 	padding-right:15px;
 	color:#FFFFFF;
 	display:none;
+	margin-right:14px;
 }
 .planos .hover h2 {
 	font-size:32px;	
@@ -760,7 +761,7 @@ textarea {
 
 	color:#707070;
 }
-.startups h1, .experiencia h1 {
+.maincontent h1 {
 	font-size:30px;
 	font-weight:300;
 	line-height:1.87;
@@ -769,7 +770,7 @@ textarea {
 	margin-bottom:20.7px;
 }
 
-.startups strong, .experiencia strong {
+.maincontent strong {
 	font-weight:bold;
 	color:#6cb758;
 }
@@ -1362,7 +1363,7 @@ form input[type="checkbox"]:checked + label:after {
 	padding-bottom:20px;
 	padding-left:20px;
 }
-.busca-geral {
+.maincontent {
 	background-image:url('../images/bg-busca.png');
 	background-repeat:no-repeat;
 	background-position-y:-542px;
@@ -1652,6 +1653,139 @@ form input[type="checkbox"]:checked + label:after {
 }
 #resultados-startups #equipe .logo-img {
 	background-image:url('../images/elisa-ribeiro.png');
+}
+.chat .item {
+	width:918px;
+	height:208px;
+	box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	background-color:#FFFFFF;
+	padding-top:29.6px;
+	padding-left:38px;
+	margin-bottom:38px;
+}
+.chat .item .row {
+	margin-left:0;
+	margin-right:0;
+	justify-content:space-between;
+}
+.chat .item .logo-img {
+	width:157px;
+	height:157px;
+	border-radius:78.5px;
+	background-image:url('../images/elisa-ribeiro.png');
+	background-size:cover;
+	margin-right:24.4px;
+}
+.chat .item .info {
+	margin-top:42.4px;
+	margin-right:60px;
+}
+.chat .item h3 {
+	font-size:20px;
+	font-weight:600;
+	text-align:left;
+	color:#707070;
+}
+.chat .item h4 {
+	font-size:20px;
+	font-weight:300;
+	line-height:1.35;
+	text-align:left;
+	color:#6db757;
+}
+.chat .item .info span {
+	margin-left:10px;
+}
+.chat .item .letter-icon {
+	width:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-left:1px solid #CCCCCC;
+}
+.chat .item .letter-icon img {
+	width:70px;
+	height:60px;
+	margin-left:24px;
+}
+.chat .item .letter-icon .num-msg {
+	width:34px;
+	height:34px;
+	border-radius:17px;
+	text-align:center;
+	padding-top:4px;
+	color:#FFFFFF;
+	background-color:#6cb757;
+	position:relative;
+	bottom:25px;
+	right:10px;
+}
+#chat-open .list .item {
+	width:100%;
+}
+#chat-open .list .item .row {
+	justify-content:normal;
+}
+#chat-open .list .item .back img {
+	width:41.7px;
+	height:69.7px;
+	margin-top:47.6px;
+	margin-right:49.1px;
+	margin-left:50.2px;
+}
+#chat-open .list .chat-talk div {	
+	width:100%;
+	display:flex;
+}
+#chat-open .list .chat-talk div p {
+	width:564px;	
+	border-radius:30px;	
+	padding-left:29.5px;
+	padding-right:37px;
+	padding-top:17.3px;	
+	padding-bottom:5px;
+	font-size:25px;
+	font-weight:300;
+	line-height:1.2;
+	color:#161615;
+}
+#chat-open .list .chat-talk .send {
+	justify-content:flex-end;
+}
+#chat-open .list .chat-talk .send p {
+	background-color:#e8e8e8;
+}
+#chat-open .list .chat-talk .receive p {
+	background-color:#6aaa4266;	
+}
+#planos {
+	background-position-y:-200px;
+}
+#planos h3 {
+	margin-top:69.8px;
+}
+#planos h1 {
+	height:auto;
+	font-size:41px;	
+}
+#planos h1 strong {
+	color:#455560;
+}
+#planos .planos .hover {
+	background-color:#1a2227cc;
+	padding-top:246px;	
+	color:#FFFFFF;
+	text-align:center;
+	width:92%;
+}
+#planos .planos .hover ul {
+	padding-left:20px;	
+	text-align:left;	
+	margin-bottom:40px;
+}
+#planos .planos .hover ul li {
+	font-size:16px;
+	color:#FFFFFF;
 }
 /***RESPONSIVIDADE***/
 @media screen and (min-width:1300px) {
