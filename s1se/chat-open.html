@@ -1,14 +1,9 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<!------ Include the above in your HEAD tag ---------->
-
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<!------ Include the above in your HEAD tag ---------->
-
-
-<!DOCTYPE html><html class=''>
+<!DOCTYPE html>
+<html class=''>
 <head>
   <meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/emilcarlsson/pen/ZOQZaV?limit=all&page=74&q=contact+" />
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
@@ -159,22 +154,17 @@ Website: http://emilcarlsson.se/
     <div id="frame">	
     	<div class="content">
     		<div class="contact-profile">
-          <a href="chat.html">
-            <div class="back">
-                <img src="assets/images/seta-back.png">
-            </div>
-          </a>
-    			<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-    			<p>Harvey Specter <br>
-            <strong>Design, Marketing Digital, Social Media, Html, CSS</strong><br>
-            <img src="assets/images/location.svg" class="location" width="22" height="31">
-            <span>Rio de Janeiro - RJ</span>
-          </p>
-    			<div class="social-media">
-    				<i class="fa fa-facebook" aria-hidden="true"></i>
-    				<i class="fa fa-twitter" aria-hidden="true"></i>
-    				 <i class="fa fa-instagram" aria-hidden="true"></i>
-    			</div>
+	          <a href="chat.html">
+	            <div class="back">
+	                <img src="assets/images/seta-back.png">
+	            </div>
+	          </a>
+	    			<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+	    			<p>Harvey Specter <br>
+	            <strong>Design, Marketing Digital, Social Media, Html, CSS</strong><br>
+	            <img src="assets/images/location.svg" class="location" width="22" height="31">
+	            <span>Rio de Janeiro - RJ</span>
+	          </p>
     		</div>
     		<div class="messages">
     			<ul>
@@ -250,14 +240,14 @@ Website: http://emilcarlsson.se/
   </div>
 </div>
 <script src="assets/js/jquery.min.js"></script>       
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous">
-  </script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/bootstrap-tagsinput.js"></script>  
-<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    	integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    	crossorigin="anonymous">
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bootstrap-tagsinput.js"></script>  
+
 <script >$(".messages").animate({ scrollTop: $(document).height() }, "fast");
 
 $("#profile-img").click(function() {
@@ -313,6 +303,10 @@ $(window).on('keydown', function(e) {
     return false;
   }
 });
+
+$('#attachment-upload').on('shown.bs.modal', function (e) {
+  $('body').css('padding-right','0');
+})
 //# sourceURL=pen.js
 </script>
 </body></html>

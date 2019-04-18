@@ -75,13 +75,14 @@ header {
 	left:inherit;	
 }
 .modal-backdrop {
-	z-index:-1;
+	z-index:98;
 }
 .modal-open .modal {
 	height:100%;
 }
 #chat .modal-dialog {
-	left:0;
+	left:549px;
+	top:280px;
 	width:200px;	
 }
 #chat .modal-body {
@@ -1899,6 +1900,7 @@ form input[type="checkbox"]:checked + label:after {
     width: 58px;
     min-width: 58px;
   }
+
 }
 #frame #sidepanel #profile {
   width: 80%;
@@ -2362,6 +2364,7 @@ form input[type="checkbox"]:checked + label:after {
     width: calc(100% - 58px);
     min-width: 300px !important;
   }
+  
 }
 @media screen and (min-width: 900px) {
   #frame .content {
@@ -2798,6 +2801,16 @@ form input[type="checkbox"]:checked + label:after {
 		left:0;
 		font-size:14px;
 	}
+	#frame .content .contact-profile img:not(.location) {
+		margin-left:75px;
+	}
+	#frame .content .contact-profile .back img {
+		margin-left:20px;
+	}
+	#frame .content .messages ul li p {
+		font-size:18px;
+		max-width:300px;
+	}
 
 }
 @media screen and (max-width:768px) {
@@ -2873,6 +2886,36 @@ form input[type="checkbox"]:checked + label:after {
 	.resultados-geral #educacao .educ-item h4 {
 		line-height:1;
 	}
+	#welcome-chat {
+		margin-top:0;
+	}
+	#frame {
+		max-height:100%;
+	}
+	#frame .content {
+		width:100%;
+	}
+	#frame .content .contact-profile {
+  		height:315px;
+  		position:relative;
+  		bottom:100px;
+  	} 
+  	#frame .content .messages {
+  		position:relative;
+  		top:-100px;
+  	}
+	#frame .content .contact-profile img:not(.location) {
+		margin-left: calc(50% - 78.5px);
+  	}
+  	#frame .content .contact-profile p {
+  		padding-top:190px;
+  		float:none;
+	  	text-align:center;
+  	}
+  	#frame .content .messages {
+  		min-height:calc(100% - 400px);
+  		max-height:calc(100% - 400px);
+  	}
 }
 @media screen and (max-width:660px) {
 	.busca, .busca_avancada {
@@ -3112,6 +3155,31 @@ form input[type="checkbox"]:checked + label:after {
 	.resultados-geral .right span {
 		font-size:34px;
 	}
+	#frame .content .messages {
+		min-height: calc(100% - 350px);
+		max-height: calc(100% - 350px);
+	}
+	#frame .content .message-input {
+		height:70px;
+		padding-top:10px;
+		padding-left:10px;
+	}
+	#frame .content .message-input .wrap input {
+		height:50px;
+		width:80%;
+		font-size:14px;
+	}
+	#frame .content .message-input .wrap .attachment {
+		font-size:1.5em;
+		right:40px;
+	}
+	#frame .content .message-input .wrap button {
+		padding:10px 0 0 20px;
+	}
+	#frame .content .message-input .wrap button img {
+		width:35px;
+	}
+
 }
 @media screen and (max-width:415px)  {
 	.col {
@@ -3146,6 +3214,10 @@ form input[type="checkbox"]:checked + label:after {
 	}
 }
 @media screen and (max-width:375px) {
+	#chat .container {
+		padding-left:0;
+		padding-right:0;
+	}
 	.menu {
 		margin-top:20px;
 	}
