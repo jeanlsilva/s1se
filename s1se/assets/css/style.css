@@ -468,6 +468,7 @@ header {
 	position:absolute;
 	right:0;	
 	margin-top:100px;
+	z-index:-1;
 }
 .frame-right div {
 	background-color:#83939c;
@@ -487,11 +488,11 @@ header {
 	width:58%;
 	float:right;	
 }
-.frame_video {
+.coluna_2 #ytplayer {
 	width:560px;
 	float:left;
 	margin-top:133px;
-	margin-left:25px;
+	margin-left:15px;
 }
 .coluna_1 .ret, .coluna_2 .ret {
 	width: 163px;
@@ -550,6 +551,7 @@ header {
 }
 .planos .hover h2 {
 	font-size:32px;	
+	color:#FFFFFF;
 }
 .planos .hover p {
 	font-size:16px;
@@ -1857,7 +1859,7 @@ form input[type="checkbox"]:checked + label:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100%;
   background:none;  
   font-family: "proxima-nova", "Source Sans Pro", "Open sans", sans-serif;
   font-size: 1em;
@@ -1878,6 +1880,216 @@ form input[type="checkbox"]:checked + label:after {
   max-height: 720px;
   background: #FFFFFF;  
 }
+
+.hero.sobre {
+	width:100%;
+	height:463px;
+	margin-bottom:79px;
+	background-image:url('../images/hero2.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-align:center;
+	padding-top:116px;
+}
+.hero.sobre h1 {
+	width:944px;
+	line-height:1.23;
+	margin:auto;
+}
+#sobre {
+	margin-bottom:77px;
+}
+.sobre h1 {
+	font-size:92px;
+	color:#FFFFFF;
+}
+.sobre h1 span {
+	font-weight:800;
+	color:#FFFFFF;
+}
+.sobre h1 span strong {
+	color:#6cb758;
+}
+#sobre .mvv {
+	margin-bottom:127.8px;
+}
+#sobre .mvv .row {
+	justify-content:space-between;
+}
+#sobre .mvv .col-sm-4 div {
+	width:100%;
+	height:713.3px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-align:center;
+}
+#sobre .mvv .col-sm-4 h2 {
+	color:#FFFFFF;
+	padding-top:328px;
+	position:relative;
+	z-index:999;
+	font-size:42px;
+	font-weight:600;
+}
+#sobre .mvv .missao {
+	background-image:url('../images/designer.png');
+}
+#sobre .mvv .missao:hover .hover {
+	display:block;
+}
+#sobre .mvv .visao {
+	background-image:url('../images/empreendedora.png');
+}
+#sobre .mvv .visao:hover .hover {
+	display:block;
+}
+#sobre .mvv .valores {
+	background-image:url('../images/investidor.png');
+}
+#sobre .mvv .valores:hover .hover {
+	display:block;
+}
+#sobre .mvv .hover {
+	width:inherit;
+	height:inherit;
+	background-color:rgba(0,0,0,0.7);	
+	display:none;
+	position:relative;
+	bottom:386px;
+	padding:10px;
+	padding-top:386px;
+	z-index:998;
+	color:#FFFFFF;
+}
+#sobre .mvv .hover ul li {
+	color:#FFFFFF;
+}
+#sobre .oqf {
+	margin-bottom:91.1px;
+}
+#sobre .oqf h1 {
+	width:836px;
+	height:auto;
+	font-size:48px;
+	font-weight:300;
+	line-height:1.17;	
+	margin-bottom:40px;
+}
+#sobre .oqf h1 strong {
+	font-weight:800;
+	color:#455560;
+}
+#sobre .oqf h3,
+#sobre .cf h3 {
+	text-transform:uppercase;
+	font-weight:300;
+	margin-bottom:41.5px;
+}
+#sobre .oqf .col-md-6 {
+	font-size:29px;
+	line-height:1.76;	
+}
+#sobre .oqf .col-md-6 p,
+#sobre .oqf .col-md-6 ul li{
+	color:rgba(69, 85, 96, 0.6);
+}
+#sobre .oqf .col-md-6 ul li {
+	list-style-position:inside;
+	font-size:25;
+}
+#sobre .oqf .col-md-6 ul {
+	padding-left:0;
+}
+#sobre .oqf .col-md-6 img {
+	width:682px;
+	height:454.9px;
+	margin-top:44.4px;
+}
+#sobre .cf .img-txt {	
+	width:100%;
+	height:608.8px;
+	background-image:url('../images/cf-img.png');
+	background-repeat:no-repeat;
+	background-position-x:-127px;
+	position:relative;
+	left:-51px;
+}
+#sobre .cf .txt {
+	width:648px;
+	height:auto;
+	padding-left:29.5px;
+	padding-top:26px;
+	float:right;
+	background-color:#FFFFFF;
+	position:relative;	
+	top:100.6px;
+	left:50px;
+}
+#sobre .cf .txt h2{
+	font-size:32px;
+	font-weight:800;
+	line-height:1.13;
+}
+#sobre .cf .txt ol {
+	padding-left:1em;
+}
+#sobre .cf .txt ol li {
+	font-size:16px;
+	line-height:1.5;
+	color:rgba(69, 85, 96, 0.6);
+}
+#sobre .cf h1 {
+	width:511px;
+	height:auto;
+	text-align:center;
+	font-size:48px;
+	line-height:1.17;
+	margin-top:100.7px;
+	margin-bottom:96px;
+}
+#sobre .cf h1 strong {
+	font-weight:800;
+	color:inherit;
+}
+#sobre .func-area {
+	height:auto;
+	margin-bottom:66.5px;
+}
+#sobre .func-area .row {
+	justify-content:space-between;
+	align-items:flex-end;
+}
+#sobre .func {
+	width:286px;
+	height:auto	
+}
+#sobre .qmf h2, #sobre .qmf h3 {
+	font-size:48px;
+	font-weight:300;
+	padding-left:9px;
+	margin-bottom:25px;
+}
+#sobre .qmf h3 strong {
+	font-weight:800;
+	color:inherit;
+}
+#sobre .qmf h2 {
+	color:#3fc858;
+}
+#sobre .qmf .planos-btn {
+	background-color:#3fc858;
+	width:337px;
+	height:63px;	
+	border-radius:11px;
+}
+#sobre .qmf .planos-btn a {
+	color:#FFFFFF;
+	font-size:25px;
+	display:block;
+	text-align:center;
+	padding:13px;
+}
+
 @media screen and (max-width: 360px) {
   #frame {
     width: 100%;
@@ -2611,6 +2823,9 @@ form input[type="checkbox"]:checked + label:after {
 		margin-right:10px;
 		margin-left:10px;
 	}
+	#sobre .func img {
+		width:250px;
+	}
 }
 @media screen and (max-width:1199px) {
 	.experiencia #form-data,.startups #form-data,#numero, #complemento, #bairro, #pais, #estado, #cidade {
@@ -2651,6 +2866,23 @@ form input[type="checkbox"]:checked + label:after {
 		width:100%;
 		height:auto;
 	}	
+	#sobre .container {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.hero.sobre h1 {
+		font-size:48px;
+		width:500px
+	}
+	#sobre .oqf h1 {
+		width:auto;
+	}
+	#sobre .cf h1 {
+		margin-top:113px;
+	}
+	#sobre .func img {
+		width:220px;
+	}
 }
 @media screen and (max-width:991px) {
 	.menu {
@@ -2728,6 +2960,26 @@ form input[type="checkbox"]:checked + label:after {
 	header .col-sm-4 {
 		display:none;
 	}
+	#sobre .func-area .col-md-3 {
+		padding-left:0;
+		padding-right:0;
+	}
+	.chat .item {
+  		width:100%;
+  	}
+  	.chat .item .logo-img {
+  		width:100px;
+  		height:100px;
+  		margin-right:0;
+  		margin-top:20px;
+  	}
+  	.chat .item .info {
+  		margin-right:0;
+  	}
+  	.chat .item h3,
+  	.chat .item h4 {
+  		font-size:16px;
+  	}
 }
 @media screen and (max-width:981px) {
 	.planos .col-sm-3 {
@@ -2916,6 +3168,61 @@ form input[type="checkbox"]:checked + label:after {
   		min-height:calc(100% - 400px);
   		max-height:calc(100% - 400px);
   	}
+  	.chat .item {
+  		height:auto;
+  		padding-right:38px;
+  	}
+  	.chat .item .row {
+  		flex-direction:column;
+  	}
+  	.chat .item .logo-img {
+  		width:157px;
+  		height:157px;
+  		margin-top:0;
+  		margin:auto;
+  	}
+  	.chat .item .info {
+		width:100%;
+		text-align:center;
+		margin-bottom:20px;
+	}
+	.chat .item .info h3,
+	.chat .item .info h4 {
+		text-align:center;
+	}
+	.chat .item .letter-icon {
+		width:100%;
+		justify-content:center;
+		bottom:0;
+		border:0;
+	}
+}
+@media screen and (max-width:767px) {
+	#sobre .oqf .col-md-6 ul {
+		width:100%;
+	}
+	#sobre .cf h1 {
+		width:100%;
+	}
+	#sobre .cf .txt {
+		width:450px;
+		top:50.6px;
+	}
+	#sobre .cf .txt ol li{
+		font-size:14px;
+	}
+	#sobre .cf .img-txt {
+		width:100%;
+		background-size:100%;
+	}
+	#sobre .func {
+		width:100%;
+		text-align:center;
+		margin-top:20px;
+	}
+	#sobre .func img {
+		width:auto;
+	}	
 }
 @media screen and (max-width:660px) {
 	.busca, .busca_avancada {
@@ -3100,6 +3407,9 @@ form input[type="checkbox"]:checked + label:after {
 	form input[type="radio"] + label {
 		font-size:16px;
 	}
+	#sobre .mvv .col-sm-4 div {
+		margin-bottom:20px;
+	}
 }
 
 @media screen and (max-width:515px) {
@@ -3179,7 +3489,28 @@ form input[type="checkbox"]:checked + label:after {
 	#frame .content .message-input .wrap button img {
 		width:35px;
 	}
-
+	.hero.sobre h1 {
+		width:300px;
+	}	
+}
+@media screen and (max-width:450px) {
+	#sobre .cf .txt {
+		width:100%;
+		top:0;
+		background:rgba(255,255,255,0.5);
+		left:0;
+		padding-top:0;
+	}
+	#sobre .cf .txt ol li {
+		font-weight:600;
+	}
+	#sobre .cf .img-txt {
+		background-size:auto;
+		left:0;		
+	}
+	.maincontent.chat h1 {
+		text-align:center;
+	}
 }
 @media screen and (max-width:415px)  {
 	.col {

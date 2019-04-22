@@ -1,0 +1,325 @@
+<html>
+<head>
+	<title>S1SE - Startup, Investors, Suppliers, Employees</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="logo">
+						<a href="#">
+							<img src="assets/images/logo.png" class="logo-s1se-01" />
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="menu">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<img src="assets/images/notif.svg" class="icone-notif" width="34.7" height="35.8" data-toggle="dropdown"/>
+							<!--if notificacoes <=0 -> display:none -->
+							<div class="num-notif">10</div>
+							<div class="dropdown-menu notif">
+								<ul>
+									<li><a href="#">notificação teste 1</a></li>
+									<li><a href="#">notificação teste 2</a></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#navbarMenu">
+								<span class="navbar-toggler-icon"></span>
+								</button>
+							</div>
+							<div class="menu navbar-collapse collapse" id="navbarMenu">	
+							<ul>
+								<li>
+									<a href="#">Quem Somos</a>
+								</li>
+								<li>
+									<a href="#">Planos</a>
+								</li>
+								<li>
+									<a href="#">Contato</a>
+								</li>		
+								<!-- if usuario=logado->display:none -->							
+								<div class="deslogado">
+									<li class="btn_cadastro">
+										<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
+									</li>
+									<li class="btn_entrar" data-toggle="modal" data-target="#janela">
+										<a class="Entrar" href="#">Entrar</a>	
+									</li>
+								</div>
+								<!-- if usuario=logado->display:block -->
+								<li class="logado">									
+								<div class="nav-perfil dropdown-toggle" data-toggle="dropdown">										
+									<div class="img-perfil"></div>Nome do Usuário	
+								</div>	
+								<div class="dropdown-menu">
+									<ul>
+										<li><a href="../">Home</a></li>
+										<li><a href="../perfil.html">Meu Perfil</a></li>
+										<li><a href="../chat.html">Chat</a></li>
+										<li><a href="../alterar-senha.html">Alterar Senha</a></li>
+										<li><a href="#">Sair</a></li>
+									</ul>
+								</div>	
+								</li>								
+							</ul>							
+						</div>
+					</nav>
+					</div>
+				</div>
+				<div class="col-sm-4 dropdown">						
+					<!--if usuario=logado->display:none-->
+					<div class="deslogado"> 
+						<div class="btn_cadastro">
+						<a class="Cadastre-se" href="cadastro-usuarios.html">Cadastre-se</a>
+						</div>
+						<div class="btn_entrar" data-toggle="modal" data-target="#janela">
+							<a class="Entrar" href="#">Entrar</a>
+						</div>	
+					</div>
+					<!--if usuario=logado->display:flex-->
+					<div class="logado">
+						<img src="assets/images/notif.svg" class="icone-notif" width="34.7" height="35.8" data-toggle="dropdown"/>
+						<!--if notificacoes <=0 -> display:none -->
+						<div class="num-notif">10</div>
+						<div class="dropdown-menu notif">
+							<ul class="lista-notif">
+								<li>notificação teste 1</li>
+								<li>notificação teste 2</li>
+							</ul>
+						</div>
+						<div class="nav-perfil">
+							<div class="user-options dropdown-toggle" data-toggle="dropdown">
+								<div class="img-perfil"></div>Nome do Usuário	
+								<div class="dropdown-menu">
+									<ul>
+										<li><a href="../">Home</a></li>
+										<li><a href="../perfil.html">Meu Perfil</a></li>
+										<li><a href="../chat.html">Chat</a></li>
+										<li><a href="../alterar-senha.html">Alterar Senha</a></li>
+										<li><a href="#">Sair</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="janela">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<img src="assets/images/logo.png"/>
+					</div>
+					<div class="modal-body">
+						<form>
+							<input type="text" placeholder="E-mail"><br>
+							<input type="text" placeholder="Senha"><br>
+							<input type="submit" value="Continuar"><br>
+							<a href="#"><u>Esqueci a senha</u></a><br><br>
+							<a href="#" data-dismiss="modal">Cancelar</a>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a href="cadastro-usuarios.html">Criar uma conta</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="hero sobre">
+		<h1>Impulsionando ideias <span>através <strong>da conexão</strong></span>
+	</div>
+	<div class="maincontent" id="sobre">		
+		<div class="container">
+			<div class="mvv">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="missao">
+							<h2>Missão</h2>
+							<div class="hover">
+								Conectar ecossistema empreendedor, facilitando a criação e desenvolvimento de novas ideias que podem mudar o mundo
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="visao">
+							<h2>Visão</h2>
+							<div class="hover">
+								Tirar do papel ideias que podem fazer a diferença
+							</div>						
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="valores">
+							<h2>Valores</h2>
+							<div class="hover">
+								<ul>
+									<li>Simplificar a vida do ecossistema empreendedor</li>
+									<li>Democratizar o acesso a recursos e oportunidades</li>
+									<li>Facilitar conexões</li>
+									<li>Empoderar o empreendedor</li>
+								</ul>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="oqf">				
+				<div class="green-bar"></div><h3>O que fazemos</h3>
+				<h1>Conectamos <strong>pessoas excelentes</strong> para impulsionar <strong>ideias inovadoras</strong></h1>
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+							Acreditamos que as ideias podem mudar o mundo, e vamos ajudar a tirar as suas do papel. Conectando empreendedores a investidores, profissionais e fornecedores.
+						</p>
+						<ul>
+							<li>
+								Ideias: Descreva a sua ideia e encontre pessoas que irão ajudá-lo a fazer acontecer.
+							</li>	
+							<li>
+								Profissionais: Busque ideias inovadoras e mostre como você pode ajudá-la a se tornar realidade.
+							</li>
+							<li>
+								Investidores: Faça parte da mudança investindo nas melhores ideias e pessoas.
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<img src="assets/images/sobre-oqf-img.png" />
+					</div>
+				</div>				
+			</div>
+			<div class="cf">
+				<div class="green-bar"></div><h3>Como funciona</h3>
+				<div class="row">
+					<div class="img-txt">
+						<div class="txt">
+							<h2>Empreendedor</h2>
+							<ol>
+								<li>Diga um pouco sobre você</li>
+								<li>Descreva suas ideias e diga o que você precisa para colocá-la em prática</li>
+								<li>Procure profissionais e fornecedores que te ajudem a fazer acontecer</li>
+								<li>Conecte-se com potenciais investidores para fazer a sua ideia decolar</li>
+							</ol>
+							<h2>Profissional</h2>
+							<ol>
+								<li>Diga um pouco sobre você:habilidades, portfólio, tipo de projeto que procura</li>
+								<li>Conecte-se com as ideias cadastradas na S1SE</li>
+								<li>Ajude ideias inovadoras a saírem do papel</li>
+							</ol>
+							<h2>Investidor</h2>
+							<ol>
+								<li>Descreva o seu modelo de investimento e tipos de empresa que gostaria de investir</li>
+								<li>Procure ideias e avalie o pitch</li>
+								<li>Conecte-se direto com o empreendedor</li>
+							</ol>
+							<h2>Fornecedor</h2>
+							<ol>
+								<li>Diga um pouco sobre a sua empresa</li>
+								<li>Conecte-se com as ideias cadastradas na S1SE</li>
+								<li>Ajude ideias inovadoras a saírem do papel</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<h1>Queremos facilitar a sua busca por <strong>ideias, pessoas e recursos!</strong></h1>
+			</div>
+			<div class="func-area">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="func">
+							<img src="assets/images/cadastro-completo.png">
+						</div>
+					</div>				
+					<div class="col-md-3">
+						<div class="func">
+							<img src="assets/images/busca-inteligente.png">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="func">
+							<img src="assets/images/chat-integrado.png">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="func">
+							<img src="assets/images/agenda.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="qmf">
+				<h2>Quer mais funcionalidades?</h2>
+				<h3>
+					Por <strong>menos de R$1,00</strong> por dia tenha acesso à ferramentas exclusivas, como <strong>busca ativa</strong> e <strong>cadastro de vídeos</strong> e <strong>links</strong> na sua descrição 
+				</h2>
+				<div class="planos-btn">
+					<a href="planos.html">Confira nossos planos!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="top">
+				<div class="row">
+					<div class="col-sm-7">
+						<h2>Impulsionando ideias através da conexão</h2>
+						<img src="assets/images/instagram.png" class="img-ig"/>
+						<img src="assets/images/youtube.png" class="img-yt"/>
+					</div>
+					<div class="col-sm-5">
+						<div class="row">
+							<div class="col-sm-6">
+								<h4>Sobre nós</h4>
+								<ul>
+									<li><a href="#">Nosso time</a></li>
+									<li><a href="#">Prêmios</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<h4>Carreiras</h4>
+								<ul>	
+									<li><a href="#">Vagas</a></li>
+									<li><a href="#">Ajuda</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h4><a href="#">Entre em contato conosco</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="row">
+					<div class="col-sm-7">
+						<a href="#">Termos e condições</a>
+						<a href="#">Política de privacidade</a>
+					</div>
+					<div class="col-sm-5">
+						&copy; 2019 S1SE. Todos os direitos reservados
+					</div>
+				</div>
+			</div>
+		</div>			
+	</footer>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 
+		integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 
+		crossorigin="anonymous">
+	</script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
